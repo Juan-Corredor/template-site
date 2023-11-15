@@ -15,34 +15,57 @@ const myScrollAnimation = () => {
     });
 }
 
-const updateLinkState = () => {
+const updateLinkState = (path) => {
     // Elimina la clase 'selected' de todos los enlaces
-    document.querySelectorAll('.options__menu a').forEach(link => {
-        link.classList.remove('selected');
-    });
+    // document.querySelectorAll('.options__menu a').forEach(link => {
+    //     link.classList.remove('selected');
+    // });
 
-    // Obtiene el nombre del archivo HTML actual de la URL del documento
-    const currentPage = window.location.href.split('/').pop() || 'index.html';
+    // // Obtiene el nombre del archivo HTML actual de la URL del documento
+    // const currentPage = window.location.href.split('/').pop() || 'index.html';
 
-    // Identifica el ID del enlace basado en el nombre del archivo
+    // // Identifica el ID del enlace basado en el nombre del archivo
+    // let linkId;
+    // switch (currentPage) {
+    //     case 'index.html':
+    //         linkId = 'link-home';
+    //         break;
+    //     case 'introduction.html':
+    //         linkId = 'link-about';
+    //         break;
+    //     // Añade más casos aquí según sea necesario
+    // }
+
+    // // Añade la clase 'selected' al enlace correspondiente
+    // if (linkId) {
+    //     const activeLink = document.getElementById(linkId);
+    //     if (activeLink) {
+    //         activeLink.classList.add('selected');
+    //     }
+    // }
+
+    // // Primero elimina la clase 'selected' de todos los enlaces
+    // document.querySelectorAll('.options__menu a').forEach(link => {
+    //     link.classList.remove('selected');
+    // });
+
+    // Luego añade la clase 'selected' al enlace correspondiente
     let linkId;
-    switch (currentPage) {
-        case 'index.html':
+    console.log(path);
+    switch(path) {
+        case '/':
             linkId = 'link-home';
             break;
-        case 'introduction.html':
+        case '/introduction':
             linkId = 'link-about';
             break;
         // Añade más casos aquí según sea necesario
     }
 
-    // Añade la clase 'selected' al enlace correspondiente
-    if (linkId) {
-        const activeLink = document.getElementById(linkId);
-        if (activeLink) {
-            activeLink.classList.add('selected');
-        }
-    }
+    const activeLink = document.getElementById(linkId);
+    if (activeLink) {
+        activeLink.classList.add('selected');
+    }    
 };
 
 const loadComponentOnce = async (componentPath, placeholderId) => {
@@ -62,7 +85,8 @@ const initializePage = async () => {
     await loadComponentOnce('./pages/footer.html', 'footer-placeholder');
 
     // Luego realiza las actualizaciones y asignaciones de eventos necesarias
-    updateLinkState();
+    const path = window.location.pathname;
+    updateLinkState(path);
     myScrollAnimation();
    
 };
