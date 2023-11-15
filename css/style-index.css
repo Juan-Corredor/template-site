@@ -1,0 +1,270 @@
+#article-diplomat-information,
+#article-certificate-information {
+    padding: 0cm;
+}
+
+#article-certificate-information {
+    padding-bottom: 1cm;
+}
+
+#section-course-content,
+#section-learning,
+#section-collaborators,
+#section-testimonials,
+#section-interested {
+    flex-direction: column;
+}
+
+#article-collaborators,
+#article-learning,
+#article-about {
+    background-color: rgba(238, 238, 238, 1);
+}
+
+
+/* ESTILOS CABECERA */
+header {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#header-main {
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(216, 216, 216, 0.171);
+}
+
+#header-image {
+    width: 100%;
+    height: 15cm;
+    background-image: url(../resource/img-informacion/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#header-div-main {
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-div-internal {
+    width: 100%;
+    padding: 15px 0px;
+    text-align: start;
+}
+
+.header-div-internal a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+/* se le aplica estilos a el segundo elemento con esta clase */
+.header-div-internal:nth-child(2) {
+    text-align: center;
+    font-size: 30pt;
+    border: none;
+    border-bottom: #000 solid 10px;
+    border-top: #000 solid 10px;
+    padding: 50px 0px;
+}
+
+/* se le aplica estilos a el tercer elemento con esta clase */
+.header-div-internal:nth-child(3) {
+    text-align: end;
+}
+
+/* SECCION DE INFORMACIÓN DEL DIPLOMADO */
+#section-diplomat-information {
+    align-items: start !important;
+}
+
+.subsection-diplomat-information {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 25px; */
+}
+
+.subsection-diplomat-information .main-image-container {
+    width: 65px;
+    padding-bottom: 15px;
+}
+
+/* SECCION DE INFORMACIÓN DEL CERTIFICADO */
+.subsection-certificate-information:nth-child(1) {
+    width: 70%;
+}
+
+.subsection-certificate-information:nth-child(1) .texts-highlighted {
+    font-size: 13pt;
+}
+
+.subsection-certificate-information:nth-child(1) a {
+    color: #cc0000;
+}
+
+.subsection-certificate-information:nth-child(2) {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subsection-certificate-information .main-image-container {
+    width: 160px;
+}
+
+/* SECCION DE ACERCA DEL DIPLOMADO */
+#section-about {
+    flex-direction: column !important;
+}
+
+.subsection-about {
+    margin-bottom: 20px;
+}
+
+.subsection-about:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div-subsection-about {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subsection-about:nth-child(2) .main-image-container {
+    width: 65px;
+    padding-bottom: 15px;
+}
+
+/* SECCION DE LO QUE APRENDERÁS*/
+
+
+.icon-check {
+    color: #cc0000;
+    padding-right: 5px;
+}
+
+/* SECCION CONTENIDO DEL CURSO*/
+.accordion {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 15px 0px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13pt;
+    transition: 0.4s;
+    border-bottom: #000 solid 1px;
+}
+
+.accordion .texts-highlighted {
+    font-size: 12pt;
+    padding-left: 1%;
+}
+
+.active,
+.accordion:hover {
+    border-bottom: #cc0000 solid 2px;
+}
+
+.accordion:after {
+    font-size: 20pt;
+    content: '\002B';
+    color: #777777b7;
+    float: right;
+    padding: 0 10px;
+}
+
+.active:after {
+    color: #cc0000;
+    content: "\2212";
+}
+
+.panel {
+    margin: 2% 0;
+    padding: 0 8px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+/* SECCION DE EQUIPO DE TRABAJO */
+
+.subsection-main-collaborators {
+    width: 100%;
+    display: flex;
+}
+
+.subsection-collaborators {
+    width: 50%;
+}
+
+.container-collaborators {
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.subsection-collaborators:nth-child(2) .container-collaborators {
+    padding-right: 0;
+}
+
+/* SECCION DE EQUIPO DE TRABAJO */
+.subsection-main-testimonials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    line-height: 1.2;
+}
+
+.container-testimonials {
+    width: 25%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.container-testimonials .text-complete-highlighted {
+    margin-top: 5%;
+    font-size: 16px;
+}
+
+.container-testimonials .main-image-container {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.div-info-testimonials h5,
+.div-info-testimonials span {
+    font-size: 11pt !important;
+}
+
+.div-info-testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0%;
+    text-align: center;
+}
