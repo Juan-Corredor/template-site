@@ -211,7 +211,7 @@ a.selected {
   z-index: 1;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
   /* #hover-submenu {
     top: 0;
     position: fixed;
@@ -275,10 +275,4 @@ a.selected {
     left: 0px !important;
   }
 
-}
-
-@media screen and (max-width: 1080px) {
-  .menu__side_move {
-    width: auto !important;
-  }
 }

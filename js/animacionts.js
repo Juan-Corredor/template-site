@@ -30,7 +30,7 @@ const myMenuLateral = () => {
             button.classList.toggle("btn_open_move");
 
             // Toggle para el overlay
-            if (window.innerWidth <= 900) {
+            if (window.innerWidth <= 1080) {
                 overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
             }
         }
@@ -101,5 +101,6 @@ function myMenuAccordion() {
 
 // Ejecuta las funciones según sea necesario
 document.addEventListener('DOMContentLoaded', myMenuLateral);
+
 myMenuAccordion();
 setHeightDivDescription();
