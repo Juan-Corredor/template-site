@@ -277,8 +277,8 @@ a.selected {
 
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1080px) {
   .menu__side_move {
-    width: 80% !important;
+    width: auto !important;
   }
 }

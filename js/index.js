@@ -16,43 +16,14 @@ const myScrollAnimation = () => {
 }
 
 const updateLinkState = (path) => {
-    // Elimina la clase 'selected' de todos los enlaces
-    // document.querySelectorAll('.options__menu a').forEach(link => {
-    //     link.classList.remove('selected');
-    // });
-
-    // // Obtiene el nombre del archivo HTML actual de la URL del documento
-    // const currentPage = window.location.href.split('/').pop() || 'index.html';
-
-    // // Identifica el ID del enlace basado en el nombre del archivo
-    // let linkId;
-    // switch (currentPage) {
-    //     case 'index.html':
-    //         linkId = 'link-home';
-    //         break;
-    //     case 'introduction.html':
-    //         linkId = 'link-about';
-    //         break;
-    //     // Añade más casos aquí según sea necesario
-    // }
-
-    // // Añade la clase 'selected' al enlace correspondiente
-    // if (linkId) {
-    //     const activeLink = document.getElementById(linkId);
-    //     if (activeLink) {
-    //         activeLink.classList.add('selected');
-    //     }
-    // }
-
-    // // Primero elimina la clase 'selected' de todos los enlaces
-    // document.querySelectorAll('.options__menu a').forEach(link => {
-    //     link.classList.remove('selected');
-    // });
+    // Primero elimina la clase 'selected' de todos los enlaces
+    document.querySelectorAll('.options__menu a').forEach(link => {
+        link.classList.remove('selected');
+    });
 
     // Luego añade la clase 'selected' al enlace correspondiente
     let linkId;
-    console.log(path);
-    switch(path) {
+    switch (path) {
         case '/':
             linkId = 'link-home';
             break;
@@ -65,7 +36,7 @@ const updateLinkState = (path) => {
     const activeLink = document.getElementById(linkId);
     if (activeLink) {
         activeLink.classList.add('selected');
-    }    
+    }
 };
 
 const loadComponentOnce = async (componentPath, placeholderId) => {
@@ -88,7 +59,7 @@ const initializePage = async () => {
     const path = window.location.pathname;
     updateLinkState(path);
     myScrollAnimation();
-   
+
 };
 
 document.addEventListener('DOMContentLoaded', initializePage);
