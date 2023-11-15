@@ -27,14 +27,14 @@
 #btn_open_site {
   top: 100px;
   background-color: #AA3939;
-  width: 220px !important;
-  left: -170px !important;
+  width: 240px !important;
+  left: -185px !important;
 }
 
 #btn_open_units {
   top: 160px;
-  width: 160px !important;
-  left: -110px !important;
+  width: 175px !important;
+  left: -120px !important;
   background-color: #2E9A9A;
 }
 
