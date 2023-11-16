@@ -286,19 +286,26 @@ footer {
 }
 
 @media screen and (max-width: 1080px) {
+    .accordion .texts-highlighted,
+    .accordion, 
     .text-motivational,
     .article-main {
-        font-size: 20pt;
-        line-height: 45px;
+        font-size: 20pt !important;
+        line-height: 45px !important;
     }
 
     .section-main {
         flex-direction: column;
     }
 
+    .button-indice {
+        padding: 8px 20px !important;
+    }
+
     #header-image {
         height: 10cm !important;
     }
+
 
     .header-div-internal {
         font-size: 20pt !important;
@@ -354,7 +361,7 @@ footer {
     .div-subsection-about {
         width: 50% !important;
         margin: 1% 0 !important;
-    }
+    }    
 
     .subsection-main-collaborators {
         flex-direction: column !important;
