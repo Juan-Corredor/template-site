@@ -34,7 +34,7 @@ header {
 #header-main {
     width: 100%;
     flex-direction: column;
-    background-color: rgba(216, 216, 216, 0.171);
+    background-color: rgba(216, 216, 216, 0.253);
 }
 
 #header-image {
@@ -55,7 +55,7 @@ header {
 }
 
 .header-div-internal {
-    font-size: 13pt;
+    font-size: 11pt;
     width: 100%;
     padding: 15px 0px;
     text-align: start;
@@ -71,7 +71,7 @@ header {
 /* se le aplica estilos a el segundo elemento con esta clase */
 .header-div-internal:nth-child(2) {
     text-align: center;
-    font-size: 30pt;
+    font-size: 35pt;
     border: none;
     border-bottom: #000 solid 10px;
     border-top: #000 solid 10px;
@@ -168,13 +168,13 @@ header {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 13pt;
+    font-size: 11pt;
     transition: 0.4s;
     border-bottom: #000 solid 1px;
 }
 
 .accordion .texts-highlighted {
-    font-size: 13pt;
+    font-size: 11pt;
     padding-left: 1%;
 }
 

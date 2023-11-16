@@ -99,7 +99,7 @@ ul li {
 }
 
 .text-motivational {
-    font-size: 12pt;
+    font-size: 11pt;
     margin-bottom: 0%;
     padding: 2% 0 0 0px !important;
 }
@@ -117,7 +117,7 @@ ul li {
 }
 
 .article-main {
-    font-size: 12pt;
+    font-size: 11pt;
     width: 100%;
     height: 100%;
     line-height: 25px;
@@ -175,7 +175,7 @@ ul li {
 
 /* Estilos para la barra de desplazamiento */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;    
 }
 
 /* Estilo del pulgar (la barra que se desplaza) */
