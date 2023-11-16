@@ -286,6 +286,12 @@ footer {
 }
 
 @media screen and (max-width: 1080px) {
+    .text-motivational,
+    .article-main {
+        font-size: 20pt;
+        line-height: 45px;
+    }
+
     .section-main {
         flex-direction: column;
     }
@@ -294,8 +300,12 @@ footer {
         height: 10cm !important;
     }
 
+    .header-div-internal {
+        font-size: 20pt !important;
+    }
+
     .header-div-internal:nth-child(2) {
-        font-size: 18pt !important;
+        font-size: 25pt !important;
         padding: 30px 0px !important;
     }
 
@@ -326,6 +336,10 @@ footer {
     .container-testimonials {
         width: 100% !important;
         padding: 0% !important;
+    }
+
+    .div-info-testimonials h5, .div-info-testimonials span {
+        font-size: 20pt !important;
     }
 
     .three-row-subsection {
