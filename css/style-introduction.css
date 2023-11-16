@@ -39,6 +39,7 @@
 #article-introduction-units .three-row-subsection:nth-child(3) {
     display: block;
     overflow: scroll;
+    padding-right: 0.8%;
     overflow-y: auto !important;
     /* Habilita el desplazamiento vertical solo cuando es necesario */
     overflow-x: hidden;
