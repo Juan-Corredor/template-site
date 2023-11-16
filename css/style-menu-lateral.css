@@ -163,7 +163,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 13pt;
   transition-duration: 0.4s;
   cursor: pointer;
 
@@ -260,6 +260,10 @@ a.selected {
 
   .menu__side {
     position: fixed;
+  }
+  .menu__side,
+  .close-btn{
+    font-size: 20pt !important;
   }
 
   .body_move {
