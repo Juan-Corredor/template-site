@@ -217,12 +217,13 @@ a.selected {
     position: fixed;
     display: flex;    
     width: 100% !important;
-    height: 50px;
+    height: 80px;
     z-index: 1;
     background-color: rgba(40, 40, 41, 1);
   }
 
   #hover-submenu span {
+    font-size: 20pt;
     background-color: transparent;
     border-radius: 0%;
     position: relative;
@@ -275,7 +276,7 @@ a.selected {
   }
 
   .menu__side_move {
-    width: 80% !important;
+    width: 85% !important;
     left: 0px !important;
   }
 
