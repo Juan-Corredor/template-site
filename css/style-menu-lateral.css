@@ -212,7 +212,7 @@ a.selected {
 }
 
 @media screen and (max-width: 1080px) {
-  /* #hover-submenu {
+  #hover-submenu {
     top: 0;
     position: fixed;
     display: flex;    
@@ -257,7 +257,7 @@ a.selected {
 
   .icon-menu {
    margin-right: 3% !important;
-  } */
+  }
 
   .menu__side {
     position: fixed;

@@ -130,7 +130,7 @@ ul li {
 }
 
 .section-main {
-    width: 86%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -251,6 +251,10 @@ footer {
     #header-div-main,
     .section-main {
         width: 75% !important;
+    }
+
+    #section-video-player {
+        width: 87% !important;
     }
 
     .subsection-footer-div .main-image-container {
